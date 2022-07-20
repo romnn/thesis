@@ -1,0 +1,21 @@
+[package]
+name = "trace"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+# enable link time optimization
+lto = true
+
+[[bin]]
+name = "trace"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+
+[build-dependencies]
+anyhow = "1"
+num_cpus   = "1"
+cc         = "1"
+buildtools = { path = "../buildtools" }

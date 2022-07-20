@@ -1,0 +1,51 @@
+[package]
+name = "gpucache"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+# enable link time optimization
+lto = true
+
+[workspace]
+members = [
+  "ptx",
+  "trace",
+  "buildtools",
+]
+
+[features]
+default = []
+cuda_samples = []
+
+[lib]
+name = "cudart"
+path = "src/cudart.rs"
+crate-type = ["cdylib"] # dynamic shared lib
+
+[[bin]]
+name = "testing"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+process_path = "0.1"
+md-5 = "0.10"
+lazy_static = "1.4"
+base64ct = { version = "1.5", features = ["alloc"] }
+regex = "1"
+cfg-if = "0.1"
+libc = "0.2"
+pest = "2.0"
+pest_derive = "2.0"
+ptx = { path = "./ptx" }
+
+[build-dependencies]
+num_cpus   = "1"
+cc         = "1"
+pkg-config = "0.3"
+bindgen    = "0.60"
+lazy_static = "1.4"
+regex      = "1"
+git2 = "0.14"
+anyhow = "1.0"

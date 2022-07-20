@@ -1,0 +1,20 @@
+[package]
+name = "ptx"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+# enable link time optimization
+lto = true
+
+[dependencies]
+anyhow = "1.0"
+thiserror = "1.0"
+pest = "2.0"
+pest_derive = "2.0"
+pest-ast = "0.3"
+from-pest = "0.3"
+num = "0.4"
+
+[lib]
+crate-type = ["cdylib", "rlib"]

@@ -1,0 +1,19 @@
+mm->__cudaRegisterFatBinary(0x40b160, 0x7ffd933220f8, 0x7ffd93322108, 320)                                                                              = 0x10d5f20
+mm->__cudaRegisterFunction(0x10d5f20, 0x404180, 0x4052b9, 0x4052b9)                                                                                     = 0
+mm->__cudaRegisterFatBinaryEnd(0x10d5f20, 0, 0, 0x10d5f90)                                                                                              = 0
+mm->cudaMalloc(0x7ffd93321ee0, 36, 0, 9)                                                                                                                = 0
+mm->cudaMalloc(0x7ffd93321ed8, 36, 0x405058, 9)                                                                                                         = 0
+mm->cudaMalloc(0x7ffd93321ed0, 36, 0x405058, 9)                                                                                                         = 0
+mm->cudaMemcpy(0x7fbd52800000, 0x10d60a0, 36, 1)                                                                                                        = 0
+mm->cudaMemcpy(0x7fbd52800200, 0x10d60d0, 36, 1)                                                                                                        = 0
+mm->__cudaPushCallConfiguration(0x100000001, 1, 0x2000000020, 1)                                                                                        = 0
+mm->__cudaPopCallConfiguration(0x7ffd93321d70, 0x7ffd93321d7c, 0x7ffd93321d60, 0x7ffd93321d68)                                                          = 0
+mm->cudaLaunchKernel(0x404180, 0x100000001, 1, 0x2000000020)                                                                                            = 0
+mm->cudaDeviceSynchronize(0x10f2fd0, 129, 0, 8)                                                                                                         = 0
+mm->cudaGetLastError(0x10f7890, 0, 0, 0x12837f0)                                                                                                        = 0
+mm->cudaMemcpy(0x10d6130, 0x7fbd52800400, 36, 2)                                                                                                        = 0
+mm->cudaFree(0x7fbd52800000, 0, 1, 1)                                                                                                                   = 0
+mm->cudaFree(0x7fbd52800200, 0x405200, 0x405058, 106)                                                                                                   = 0
+mm->cudaFree(0x7fbd52800400, 0x405212, 0x405058, 107)                                                                                                   = 0
+mm->__cudaUnregisterFatBinary(0x10d5f20, 0, 0x404010, 0)                                                                                                = 0
++++ exited (status 0) +++

@@ -1,0 +1,3 @@
+[submodule "kernels/cuda-samples"]
+	path = kernels/cuda-samples
+	url = git@github.com:NVIDIA/cuda-samples.git

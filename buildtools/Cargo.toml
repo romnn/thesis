@@ -1,0 +1,19 @@
+[package]
+name = "buildtools"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+# enable link time optimization
+lto = true
+
+[lib]
+name = "buildtools"
+type = ["cdylib", "rlib"]
+
+[dependencies]
+anyhow = "1.0"
+reqwest = { version = "0.11", features = ["blocking"] }
+# bzip2-rs = "0.1"
+bzip2 = "0.4"
+tar = "0.4"

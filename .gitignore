@@ -1,0 +1,8 @@
+.DS_Store
+*.ptx
+target/
+bazel-bin
+bazel-master-thesis
+bazel-out
+bazel-testlogs
+nvbit_release
